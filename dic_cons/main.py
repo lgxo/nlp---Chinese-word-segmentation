@@ -4,7 +4,7 @@ import re
 # 更新读入的行（去掉短语标记）
 def updateLine(li, m):
     l_s = list(li)
-    del l_s[m.start():m.end()+1]
+    del l_s[m.start():m.end() + 1]
     return "".join(l_s)
 
 
